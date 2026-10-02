@@ -1,4 +1,4 @@
-const BASE='/amznews-reading-preview'; const pathname=()=>location.pathname.slice(BASE.length)||'/';
+const BASE=location.pathname==='/amznews-reading-preview'||location.pathname.startsWith('/amznews-reading-preview/')?'/amznews-reading-preview':''; const pathname=()=>location.pathname.slice(BASE.length)||'/';
 const esc = s => String(s ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cats={policy:'政策与合规',advertising:'广告与运营',product:'选品与市场',fba:'FBA与物流','ai-tools':'AI与工具'};
 const nav=[['/','精选'],['/all','全部动态'],['/daily','亚马逊日报'],['/topics','主题'],['/starred','收藏'],['/about','关于与联系']];

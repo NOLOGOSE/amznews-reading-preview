@@ -1,0 +1,1 @@
+import{m as e}from"./framework-CBpiSco-.js";import{$t as t}from"./shared-DkJZq83Q.js";import{t as n}from"./all-1R5Ahrkd.js";function r(){return[{title:t(`搜索繁忙`)},{name:`robots`,content:`noindex, follow`}]}var i=e(n);export{i as default,r as meta};
